@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE6ADFDA1B7C1F8400574AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6ADFD91B7C1F8400574AFA /* Main.storyboard */; };
+		BE6ADFDC1B7C1F8C00574AFA /* GWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6ADFDB1B7C1F8C00574AFA /* GWBaseViewController.swift */; };
+		BE6ADFDE1B7C1F9100574AFA /* GWFilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6ADFDD1B7C1F9100574AFA /* GWFilmViewController.swift */; };
+		BE6ADFE01B7C1F9700574AFA /* GWCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6ADFDF1B7C1F9700574AFA /* GWCameraViewController.swift */; };
 		BE97B3531B7C1D1F00B3E74D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE97B3521B7C1D1F00B3E74D /* AppDelegate.swift */; };
 		BE97B35A1B7C1D1F00B3E74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE97B3591B7C1D1F00B3E74D /* Assets.xcassets */; };
 		BE97B3651B7C1D5200B3E74D /* TestVideo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = BE97B3641B7C1D5200B3E74D /* TestVideo.m4v */; };
-		BE97B36B1B7C1D6300B3E74D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE97B3671B7C1D6300B3E74D /* Main.storyboard */; };
-		BE97B36C1B7C1D6300B3E74D /* GWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE97B3681B7C1D6300B3E74D /* GWBaseViewController.swift */; };
-		BE97B36D1B7C1D6300B3E74D /* GWFilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE97B3691B7C1D6300B3E74D /* GWFilmViewController.swift */; };
-		BE97B36E1B7C1D6300B3E74D /* GWCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE97B36A1B7C1D6300B3E74D /* GWCameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE6ADFD91B7C1F8400574AFA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BE6ADFDB1B7C1F8C00574AFA /* GWBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GWBaseViewController.swift; sourceTree = "<group>"; };
+		BE6ADFDD1B7C1F9100574AFA /* GWFilmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GWFilmViewController.swift; sourceTree = "<group>"; };
+		BE6ADFDF1B7C1F9700574AFA /* GWCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GWCameraViewController.swift; sourceTree = "<group>"; };
 		BE97B34F1B7C1D1F00B3E74D /* Baby Film.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Baby Film.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE97B3521B7C1D1F00B3E74D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE97B3591B7C1D1F00B3E74D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE97B35E1B7C1D1F00B3E74D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE97B3641B7C1D5200B3E74D /* TestVideo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestVideo.m4v; sourceTree = "<group>"; };
-		BE97B3661B7C1D6300B3E74D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BE97B3681B7C1D6300B3E74D /* GWBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GWBaseViewController.swift; path = "../../../Developer/Baby Film/Baby Film/GWBaseViewController.swift"; sourceTree = "<group>"; };
-		BE97B3691B7C1D6300B3E74D /* GWFilmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GWFilmViewController.swift; path = "../../../Developer/Baby Film/Baby Film/GWFilmViewController.swift"; sourceTree = "<group>"; };
-		BE97B36A1B7C1D6300B3E74D /* GWCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GWCameraViewController.swift; path = "../../../Developer/Baby Film/Baby Film/GWCameraViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +39,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE6ADFE11B7C207100574AFA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BE97B3641B7C1D5200B3E74D /* TestVideo.m4v */,
+				BE97B3591B7C1D1F00B3E74D /* Assets.xcassets */,
+				BE97B35E1B7C1D1F00B3E74D /* Info.plist */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
 		BE97B3461B7C1D1F00B3E74D = {
 			isa = PBXGroup;
 			children = (
@@ -59,13 +69,11 @@
 			isa = PBXGroup;
 			children = (
 				BE97B3521B7C1D1F00B3E74D /* AppDelegate.swift */,
-				BE97B3671B7C1D6300B3E74D /* Main.storyboard */,
-				BE97B3681B7C1D6300B3E74D /* GWBaseViewController.swift */,
-				BE97B3691B7C1D6300B3E74D /* GWFilmViewController.swift */,
-				BE97B36A1B7C1D6300B3E74D /* GWCameraViewController.swift */,
-				BE97B3591B7C1D1F00B3E74D /* Assets.xcassets */,
-				BE97B3641B7C1D5200B3E74D /* TestVideo.m4v */,
-				BE97B35E1B7C1D1F00B3E74D /* Info.plist */,
+				BE6ADFD91B7C1F8400574AFA /* Main.storyboard */,
+				BE6ADFDB1B7C1F8C00574AFA /* GWBaseViewController.swift */,
+				BE6ADFDD1B7C1F9100574AFA /* GWFilmViewController.swift */,
+				BE6ADFDF1B7C1F9700574AFA /* GWCameraViewController.swift */,
+				BE6ADFE11B7C207100574AFA /* Sources */,
 			);
 			path = "Baby Film";
 			sourceTree = "<group>";
@@ -127,9 +135,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE6ADFDA1B7C1F8400574AFA /* Main.storyboard in Resources */,
 				BE97B3651B7C1D5200B3E74D /* TestVideo.m4v in Resources */,
 				BE97B35A1B7C1D1F00B3E74D /* Assets.xcassets in Resources */,
-				BE97B36B1B7C1D6300B3E74D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,26 +148,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE97B36D1B7C1D6300B3E74D /* GWFilmViewController.swift in Sources */,
-				BE97B36E1B7C1D6300B3E74D /* GWCameraViewController.swift in Sources */,
+				BE6ADFDE1B7C1F9100574AFA /* GWFilmViewController.swift in Sources */,
+				BE6ADFE01B7C1F9700574AFA /* GWCameraViewController.swift in Sources */,
 				BE97B3531B7C1D1F00B3E74D /* AppDelegate.swift in Sources */,
-				BE97B36C1B7C1D6300B3E74D /* GWBaseViewController.swift in Sources */,
+				BE6ADFDC1B7C1F8C00574AFA /* GWBaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		BE97B3671B7C1D6300B3E74D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BE97B3661B7C1D6300B3E74D /* Base */,
-			);
-			name = Main.storyboard;
-			path = "../../../Developer/Baby Film/Baby Film";
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BE97B35F1B7C1D1F00B3E74D /* Debug */ = {
