@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JcP-sk-Rik">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Baby Film-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem tag="1" title="Camera" id="fmX-ks-xns">
+                            <connections>
+                                <segue destination="hiL-na-6qU" kind="show" id="7DD-qS-bNq"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="YCF-Sc-ceD"/>
+                        <barButtonItem tag="2" title="Film" id="2GO-9O-ZSc">
+                            <connections>
+                                <segue destination="bgS-AN-tDN" kind="show" identifier="toFilmVSegue" id="afr-hs-anZ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="sfe-Kx-biR"/>
+                        <barButtonItem tag="3" title="Make" id="UVD-mx-xUP">
+                            <connections>
+                                <segue destination="Ojo-be-UP6" kind="show" id="gxS-z9-iOG"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Baby Film" id="3tb-Zm-MdJ">
+                        <barButtonItem key="leftBarButtonItem" title="Date" id="CFo-lN-A9c"/>
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="RW5-PL-eab">
+                            <connections>
+                                <segue destination="TQZ-hF-ykN" kind="show" id="aKq-BN-NvZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="182" y="-1766"/>
+        </scene>
+        <!--Base View Controller-->
+        <scene sceneID="bpD-1n-H9l">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="JcP-sk-Rik" customClass="GWBaseViewController" customModule="Baby_Film" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="o4i-15-RKt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="yB6-Tq-bYD">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="xjm-Kn-84P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zwj-6D-1uH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-374" y="-1766"/>
+        </scene>
+        <!--Make View Controller-->
+        <scene sceneID="qBv-iP-dbr">
+            <objects>
+                <viewController id="Ojo-be-UP6" customClass="GWMakeViewController" customModule="Baby_Film" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K7j-Js-ndZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="rf2-BU-0vK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DfX-jd-feg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start date :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvA-ML-zMa">
+                                <rect key="frame" x="16" y="129" width="86" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="End date :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYI-ah-7IC">
+                                <rect key="frame" x="16" y="181" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="pB6-8z-rOM">
+                                <rect key="frame" x="178" y="170" width="245" height="44"/>
+                                <date key="date" timeIntervalSinceReferenceDate="461040527.22605097">
+                                    <!--2015-08-12 02:48:47 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You Selected" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zR2-iY-KeC">
+                                <rect key="frame" x="16" y="327" width="101" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMb-JB-2hg">
+                                <rect key="frame" x="158" y="327" width="107" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="xsl-zc-Ec1">
+                                <rect key="frame" x="131" y="131" width="155" height="19"/>
+                                <date key="date" timeIntervalSinceReferenceDate="461040527.22605097">
+                                    <!--2015-08-12 02:48:47 +0000-->
+                                </date>
+                            </datePicker>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="7eN-yP-lZK">
+                                <rect key="frame" x="131" y="181" width="155" height="19"/>
+                                <date key="date" timeIntervalSinceReferenceDate="461040527.22605097">
+                                    <!--2015-08-12 02:48:47 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Videos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Iz-Jj-xhD">
+                                <rect key="frame" x="234" y="326" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGA-HB-2RU">
+                                <rect key="frame" x="135" y="413" width="51" height="30"/>
+                                <state key="normal" title="Make it">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bgS-AN-tDN" kind="show" identifier="toMakeFilmSegue" id="fmO-Il-82T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="pB6-8z-rOM"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jK8-ax-yR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="628" y="-970"/>
+        </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="8VF-qW-Xy2">
+            <objects>
+                <viewController id="TQZ-hF-ykN" customClass="GWSettingViewController" customModule="Baby_Film" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hgt-PL-fNR"/>
+                        <viewControllerLayoutGuide type="bottom" id="8bh-yW-pih"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BHB-sA-X6Y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Setting" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0P-5v-8FA">
+                                <rect key="frame" x="256" y="20" width="55" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6b3-2f-5eB">
+                                <rect key="frame" x="20" y="192" width="280" height="30"/>
+                                <state key="normal" title="Rate or Star">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EoO-Yp-GY0">
+                                <rect key="frame" x="16" y="280" width="288" height="236"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text"> About us  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About us" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iab-GA-YEk">
+                                <rect key="frame" x="126" y="251" width="69" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iCloud" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLq-Ob-GZk">
+                                <rect key="frame" x="38" y="138" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bdL-PK-sg1">
+                                <rect key="frame" x="188" y="133" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="f6g-R3-SOy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FY5-0s-pJU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205" y="-2456"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="C3p-T1-bdq">
+            <objects>
+                <viewController id="hiL-na-6qU" customClass="GWCameraViewController" customModule="Baby_Film" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oBn-JL-AoI"/>
+                        <viewControllerLayoutGuide type="bottom" id="lMt-vv-dDM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a9v-Gk-YLh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmC-Wy-hv0">
+                                <rect key="frame" x="208" y="486" width="96" height="30"/>
+                                <state key="normal" title="Saved Photos">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rml-Rx-9SY">
+                                <rect key="frame" x="16" y="72" width="288" height="406"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJu-R4-RMa">
+                                <rect key="frame" x="16" y="486" width="77" height="30"/>
+                                <state key="normal" title="Take Photo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhoto:" destination="hiL-na-6qU" eventType="touchUpInside" id="ASg-HU-bVR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Rml-Rx-9SY" id="yvg-Gf-4oX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1J8-dw-eWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-357" y="-939"/>
+        </scene>
+        <!--Film View Controller-->
+        <scene sceneID="2eP-zV-Tsk">
+            <objects>
+                <viewController id="bgS-AN-tDN" customClass="GWFilmViewController" customModule="Baby_Film" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ee8-PQ-4W3"/>
+                        <viewControllerLayoutGuide type="bottom" id="9j6-YM-VVH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="87R-7F-aaY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40r-bU-5Nm">
+                                <rect key="frame" x="143" y="486" width="34" height="30"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A77-ar-dob">
+                                <rect key="frame" x="16" y="184" width="288" height="199"/>
+                                <connections>
+                                    <segue destination="k1f-vM-Aya" kind="embed" identifier="toAVPlayerSegue" id="kE2-D5-4Os"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6rU-h1-QLP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205" y="-970"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="5jU-4d-l08">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="k1f-vM-Aya" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xsh-kX-lg8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205" y="-460.5"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="jX6-ij-e6A">
+            <objects>
+                <viewController id="tPk-Kv-Pus" customClass="GWVideoViewController" customModule="Baby_Film" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iKj-8G-Xku"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hsa-xx-VVg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hzy-tV-la2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntX-U5-a5Y">
+                                <rect key="frame" x="261" y="506" width="77" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ntX-U5-a5Y" secondAttribute="height" multiplier="77:30" id="0uw-h8-7Uz"/>
+                                </constraints>
+                                <state key="normal" title="Save Video">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0uw-h8-7Uz"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a2P-zN-rir">
+                                <rect key="frame" x="26" y="55" width="568" height="415"/>
+                                <connections>
+                                    <segue destination="Bcy-Vx-eTS" kind="embed" identifier="videoSegue" id="GaK-YF-DHb"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ntX-U5-a5Y" firstAttribute="leading" secondItem="Hzy-tV-la2" secondAttribute="leadingMargin" constant="246" id="5ks-iY-2oy"/>
+                            <constraint firstItem="ntX-U5-a5Y" firstAttribute="top" secondItem="a2P-zN-rir" secondAttribute="bottom" constant="36" id="6TN-hW-H8B"/>
+                            <constraint firstItem="Hsa-xx-VVg" firstAttribute="top" secondItem="ntX-U5-a5Y" secondAttribute="bottom" constant="64" id="Ank-El-s65"/>
+                            <constraint firstItem="a2P-zN-rir" firstAttribute="top" secondItem="iKj-8G-Xku" secondAttribute="bottom" constant="35" id="GCG-We-Kgp"/>
+                            <constraint firstItem="Hsa-xx-VVg" firstAttribute="top" secondItem="ntX-U5-a5Y" secondAttribute="bottom" constant="17" id="HLI-j5-nxS"/>
+                            <constraint firstItem="ntX-U5-a5Y" firstAttribute="centerX" secondItem="Hzy-tV-la2" secondAttribute="centerX" id="Ho9-8f-YqM"/>
+                            <constraint firstItem="Hsa-xx-VVg" firstAttribute="top" secondItem="a2P-zN-rir" secondAttribute="bottom" constant="8" id="WXg-jc-Peo"/>
+                            <constraint firstItem="a2P-zN-rir" firstAttribute="leading" secondItem="Hzy-tV-la2" secondAttribute="leadingMargin" constant="10" id="Yrr-K1-duD"/>
+                            <constraint firstItem="a2P-zN-rir" firstAttribute="trailing" secondItem="Hzy-tV-la2" secondAttribute="trailingMargin" constant="10" id="gMh-bJ-Ake"/>
+                            <constraint firstItem="Hsa-xx-VVg" firstAttribute="top" secondItem="ntX-U5-a5Y" secondAttribute="bottom" constant="64" id="gzM-73-Mz5"/>
+                            <constraint firstItem="ntX-U5-a5Y" firstAttribute="top" secondItem="a2P-zN-rir" secondAttribute="bottom" constant="36" id="nq1-va-C8b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ntX-U5-a5Y" secondAttribute="trailing" constant="245" id="oTT-O4-edr"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5ks-iY-2oy"/>
+                                <exclude reference="nq1-va-C8b"/>
+                                <exclude reference="oTT-O4-edr"/>
+                                <exclude reference="HLI-j5-nxS"/>
+                                <exclude reference="WXg-jc-Peo"/>
+                                <exclude reference="gzM-73-Mz5"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="S0N-w8-AOK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FA7-Vq-kSE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="938" y="-1766"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="OCw-w6-RMM">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="Bcy-Vx-eTS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k2R-Uk-x4z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1679" y="-1750.5"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="fmO-Il-82T"/>
+    </inferredMetricsTieBreakers>
+</document>
