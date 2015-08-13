@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0640"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,69 +14,48 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BE79D4CD1B7B1B34008809B7"
+               BlueprintIdentifier = "BE97B34E1B7C1D1F00B3E74D"
                BuildableName = "Baby Film.app"
                BlueprintName = "Baby Film"
-               ReferencedContainer = "container:Baby Film.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BE79D4E21B7B1B34008809B7"
-               BuildableName = "Baby FilmTests.xctest"
-               BlueprintName = "Baby FilmTests"
                ReferencedContainer = "container:Baby Film.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      buildConfiguration = "Debug">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BE79D4E21B7B1B34008809B7"
-               BuildableName = "Baby FilmTests.xctest"
-               BlueprintName = "Baby FilmTests"
-               ReferencedContainer = "container:Baby Film.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BE79D4CD1B7B1B34008809B7"
+            BlueprintIdentifier = "BE97B34E1B7C1D1F00B3E74D"
             BuildableName = "Baby Film.app"
             BlueprintName = "Baby Film"
             ReferencedContainer = "container:Baby Film.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
    </TestAction>
    <LaunchAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BE79D4CD1B7B1B34008809B7"
+            BlueprintIdentifier = "BE97B34E1B7C1D1F00B3E74D"
             BuildableName = "Baby Film.app"
             BlueprintName = "Baby Film"
             ReferencedContainer = "container:Baby Film.xcodeproj">
@@ -86,16 +65,16 @@
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
+      buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BE79D4CD1B7B1B34008809B7"
+            BlueprintIdentifier = "BE97B34E1B7C1D1F00B3E74D"
             BuildableName = "Baby Film.app"
             BlueprintName = "Baby Film"
             ReferencedContainer = "container:Baby Film.xcodeproj">

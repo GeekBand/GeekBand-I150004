@@ -7,52 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE79D4D41B7B1B34008809B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79D4D31B7B1B34008809B7 /* AppDelegate.swift */; };
-		BE79D4D91B7B1B34008809B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE79D4D71B7B1B34008809B7 /* Main.storyboard */; };
-		BE79D4DB1B7B1B34008809B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE79D4DA1B7B1B34008809B7 /* Images.xcassets */; };
-		BE79D4DE1B7B1B34008809B7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE79D4DC1B7B1B34008809B7 /* LaunchScreen.xib */; };
-		BE79D4EA1B7B1B34008809B7 /* Baby_FilmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79D4E91B7B1B34008809B7 /* Baby_FilmTests.swift */; };
-		BE79D4FD1B7B1C6C008809B7 /* GWFilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79D4F81B7B1C6C008809B7 /* GWFilmViewController.swift */; };
-		BEC1E89A1B7B602A0036FA82 /* TestVideo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = BEC1E8991B7B602A0036FA82 /* TestVideo.m4v */; };
-		BEC1E89C1B7B608F0036FA82 /* GWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC1E89B1B7B608F0036FA82 /* GWBaseViewController.swift */; };
-		BEC1E89E1B7B93700036FA82 /* GWCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC1E89D1B7B93700036FA82 /* GWCameraViewController.swift */; };
+		BE97B3531B7C1D1F00B3E74D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE97B3521B7C1D1F00B3E74D /* AppDelegate.swift */; };
+		BE97B35A1B7C1D1F00B3E74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE97B3591B7C1D1F00B3E74D /* Assets.xcassets */; };
+		BE97B3651B7C1D5200B3E74D /* TestVideo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = BE97B3641B7C1D5200B3E74D /* TestVideo.m4v */; };
+		BE97B36B1B7C1D6300B3E74D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE97B3671B7C1D6300B3E74D /* Main.storyboard */; };
+		BE97B36C1B7C1D6300B3E74D /* GWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE97B3681B7C1D6300B3E74D /* GWBaseViewController.swift */; };
+		BE97B36D1B7C1D6300B3E74D /* GWFilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE97B3691B7C1D6300B3E74D /* GWFilmViewController.swift */; };
+		BE97B36E1B7C1D6300B3E74D /* GWCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE97B36A1B7C1D6300B3E74D /* GWCameraViewController.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		BE79D4E41B7B1B34008809B7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BE79D4C61B7B1B34008809B7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BE79D4CD1B7B1B34008809B7;
-			remoteInfo = "Baby Film";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		BE79D4CE1B7B1B34008809B7 /* Baby Film.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Baby Film.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE79D4D21B7B1B34008809B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE79D4D31B7B1B34008809B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE79D4D81B7B1B34008809B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BE79D4DA1B7B1B34008809B7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		BE79D4DD1B7B1B34008809B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		BE79D4E31B7B1B34008809B7 /* Baby FilmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Baby FilmTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE79D4E81B7B1B34008809B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE79D4E91B7B1B34008809B7 /* Baby_FilmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baby_FilmTests.swift; sourceTree = "<group>"; };
-		BE79D4F81B7B1C6C008809B7 /* GWFilmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GWFilmViewController.swift; sourceTree = "<group>"; };
-		BEC1E8991B7B602A0036FA82 /* TestVideo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestVideo.m4v; sourceTree = "<group>"; };
-		BEC1E89B1B7B608F0036FA82 /* GWBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GWBaseViewController.swift; sourceTree = "<group>"; };
-		BEC1E89D1B7B93700036FA82 /* GWCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GWCameraViewController.swift; sourceTree = "<group>"; };
+		BE97B34F1B7C1D1F00B3E74D /* Baby Film.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Baby Film.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE97B3521B7C1D1F00B3E74D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE97B3591B7C1D1F00B3E74D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE97B35E1B7C1D1F00B3E74D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE97B3641B7C1D5200B3E74D /* TestVideo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestVideo.m4v; sourceTree = "<group>"; };
+		BE97B3661B7C1D6300B3E74D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE97B3681B7C1D6300B3E74D /* GWBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GWBaseViewController.swift; path = "../../../Developer/Baby Film/Baby Film/GWBaseViewController.swift"; sourceTree = "<group>"; };
+		BE97B3691B7C1D6300B3E74D /* GWFilmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GWFilmViewController.swift; path = "../../../Developer/Baby Film/Baby Film/GWFilmViewController.swift"; sourceTree = "<group>"; };
+		BE97B36A1B7C1D6300B3E74D /* GWCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GWCameraViewController.swift; path = "../../../Developer/Baby Film/Baby Film/GWCameraViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BE79D4CB1B7B1B34008809B7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BE79D4E01B7B1B34008809B7 /* Frameworks */ = {
+		BE97B34C1B7C1D1F00B3E74D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -62,75 +39,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BE79D4C51B7B1B34008809B7 = {
+		BE97B3461B7C1D1F00B3E74D = {
 			isa = PBXGroup;
 			children = (
-				BE79D4D01B7B1B34008809B7 /* Baby Film */,
-				BE79D4E61B7B1B34008809B7 /* Baby FilmTests */,
-				BE79D4CF1B7B1B34008809B7 /* Products */,
+				BE97B3511B7C1D1F00B3E74D /* Baby Film */,
+				BE97B3501B7C1D1F00B3E74D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		BE79D4CF1B7B1B34008809B7 /* Products */ = {
+		BE97B3501B7C1D1F00B3E74D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BE79D4CE1B7B1B34008809B7 /* Baby Film.app */,
-				BE79D4E31B7B1B34008809B7 /* Baby FilmTests.xctest */,
+				BE97B34F1B7C1D1F00B3E74D /* Baby Film.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BE79D4D01B7B1B34008809B7 /* Baby Film */ = {
+		BE97B3511B7C1D1F00B3E74D /* Baby Film */ = {
 			isa = PBXGroup;
 			children = (
-				BE79D4D31B7B1B34008809B7 /* AppDelegate.swift */,
-				BE79D4D71B7B1B34008809B7 /* Main.storyboard */,
-				BEC1E89B1B7B608F0036FA82 /* GWBaseViewController.swift */,
-				BE79D4F81B7B1C6C008809B7 /* GWFilmViewController.swift */,
-				BEC1E89D1B7B93700036FA82 /* GWCameraViewController.swift */,
-				BE79D4D11B7B1B34008809B7 /* Supporting Files */,
+				BE97B3521B7C1D1F00B3E74D /* AppDelegate.swift */,
+				BE97B3671B7C1D6300B3E74D /* Main.storyboard */,
+				BE97B3681B7C1D6300B3E74D /* GWBaseViewController.swift */,
+				BE97B3691B7C1D6300B3E74D /* GWFilmViewController.swift */,
+				BE97B36A1B7C1D6300B3E74D /* GWCameraViewController.swift */,
+				BE97B3591B7C1D1F00B3E74D /* Assets.xcassets */,
+				BE97B3641B7C1D5200B3E74D /* TestVideo.m4v */,
+				BE97B35E1B7C1D1F00B3E74D /* Info.plist */,
 			);
 			path = "Baby Film";
-			sourceTree = "<group>";
-		};
-		BE79D4D11B7B1B34008809B7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				BE79D4DA1B7B1B34008809B7 /* Images.xcassets */,
-				BEC1E8991B7B602A0036FA82 /* TestVideo.m4v */,
-				BE79D4DC1B7B1B34008809B7 /* LaunchScreen.xib */,
-				BE79D4D21B7B1B34008809B7 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		BE79D4E61B7B1B34008809B7 /* Baby FilmTests */ = {
-			isa = PBXGroup;
-			children = (
-				BE79D4E91B7B1B34008809B7 /* Baby_FilmTests.swift */,
-				BE79D4E71B7B1B34008809B7 /* Supporting Files */,
-			);
-			path = "Baby FilmTests";
-			sourceTree = "<group>";
-		};
-		BE79D4E71B7B1B34008809B7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				BE79D4E81B7B1B34008809B7 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BE79D4CD1B7B1B34008809B7 /* Baby Film */ = {
+		BE97B34E1B7C1D1F00B3E74D /* Baby Film */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BE79D4ED1B7B1B34008809B7 /* Build configuration list for PBXNativeTarget "Baby Film" */;
+			buildConfigurationList = BE97B3611B7C1D1F00B3E74D /* Build configuration list for PBXNativeTarget "Baby Film" */;
 			buildPhases = (
-				BE79D4CA1B7B1B34008809B7 /* Sources */,
-				BE79D4CB1B7B1B34008809B7 /* Frameworks */,
-				BE79D4CC1B7B1B34008809B7 /* Resources */,
+				BE97B34B1B7C1D1F00B3E74D /* Sources */,
+				BE97B34C1B7C1D1F00B3E74D /* Frameworks */,
+				BE97B34D1B7C1D1F00B3E74D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -138,53 +87,24 @@
 			);
 			name = "Baby Film";
 			productName = "Baby Film";
-			productReference = BE79D4CE1B7B1B34008809B7 /* Baby Film.app */;
+			productReference = BE97B34F1B7C1D1F00B3E74D /* Baby Film.app */;
 			productType = "com.apple.product-type.application";
-		};
-		BE79D4E21B7B1B34008809B7 /* Baby FilmTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BE79D4F01B7B1B34008809B7 /* Build configuration list for PBXNativeTarget "Baby FilmTests" */;
-			buildPhases = (
-				BE79D4DF1B7B1B34008809B7 /* Sources */,
-				BE79D4E01B7B1B34008809B7 /* Frameworks */,
-				BE79D4E11B7B1B34008809B7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BE79D4E51B7B1B34008809B7 /* PBXTargetDependency */,
-			);
-			name = "Baby FilmTests";
-			productName = "Baby FilmTests";
-			productReference = BE79D4E31B7B1B34008809B7 /* Baby FilmTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BE79D4C61B7B1B34008809B7 /* Project object */ = {
+		BE97B3471B7C1D1F00B3E74D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = gewill.org;
 				TargetAttributes = {
-					BE79D4CD1B7B1B34008809B7 = {
-						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = RLK76T8Y89;
-						SystemCapabilities = {
-							com.apple.iCloud = {
-								enabled = 0;
-							};
-						};
-					};
-					BE79D4E21B7B1B34008809B7 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = BE79D4CD1B7B1B34008809B7;
+					BE97B34E1B7C1D1F00B3E74D = {
+						CreatedOnToolsVersion = 7.0;
 					};
 				};
 			};
-			buildConfigurationList = BE79D4C91B7B1B34008809B7 /* Build configuration list for PBXProject "Baby Film" */;
+			buildConfigurationList = BE97B34A1B7C1D1F00B3E74D /* Build configuration list for PBXProject "Baby Film" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -192,89 +112,57 @@
 				en,
 				Base,
 			);
-			mainGroup = BE79D4C51B7B1B34008809B7;
-			productRefGroup = BE79D4CF1B7B1B34008809B7 /* Products */;
+			mainGroup = BE97B3461B7C1D1F00B3E74D;
+			productRefGroup = BE97B3501B7C1D1F00B3E74D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BE79D4CD1B7B1B34008809B7 /* Baby Film */,
-				BE79D4E21B7B1B34008809B7 /* Baby FilmTests */,
+				BE97B34E1B7C1D1F00B3E74D /* Baby Film */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BE79D4CC1B7B1B34008809B7 /* Resources */ = {
+		BE97B34D1B7C1D1F00B3E74D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE79D4D91B7B1B34008809B7 /* Main.storyboard in Resources */,
-				BEC1E89A1B7B602A0036FA82 /* TestVideo.m4v in Resources */,
-				BE79D4DE1B7B1B34008809B7 /* LaunchScreen.xib in Resources */,
-				BE79D4DB1B7B1B34008809B7 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BE79D4E11B7B1B34008809B7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				BE97B3651B7C1D5200B3E74D /* TestVideo.m4v in Resources */,
+				BE97B35A1B7C1D1F00B3E74D /* Assets.xcassets in Resources */,
+				BE97B36B1B7C1D6300B3E74D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BE79D4CA1B7B1B34008809B7 /* Sources */ = {
+		BE97B34B1B7C1D1F00B3E74D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEC1E89C1B7B608F0036FA82 /* GWBaseViewController.swift in Sources */,
-				BEC1E89E1B7B93700036FA82 /* GWCameraViewController.swift in Sources */,
-				BE79D4FD1B7B1C6C008809B7 /* GWFilmViewController.swift in Sources */,
-				BE79D4D41B7B1B34008809B7 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BE79D4DF1B7B1B34008809B7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BE79D4EA1B7B1B34008809B7 /* Baby_FilmTests.swift in Sources */,
+				BE97B36D1B7C1D6300B3E74D /* GWFilmViewController.swift in Sources */,
+				BE97B36E1B7C1D6300B3E74D /* GWCameraViewController.swift in Sources */,
+				BE97B3531B7C1D1F00B3E74D /* AppDelegate.swift in Sources */,
+				BE97B36C1B7C1D6300B3E74D /* GWBaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		BE79D4E51B7B1B34008809B7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BE79D4CD1B7B1B34008809B7 /* Baby Film */;
-			targetProxy = BE79D4E41B7B1B34008809B7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		BE79D4D71B7B1B34008809B7 /* Main.storyboard */ = {
+		BE97B3671B7C1D6300B3E74D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BE79D4D81B7B1B34008809B7 /* Base */,
+				BE97B3661B7C1D6300B3E74D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BE79D4DC1B7B1B34008809B7 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BE79D4DD1B7B1B34008809B7 /* Base */,
-			);
-			name = LaunchScreen.xib;
+			path = "../../../Developer/Baby Film/Baby Film";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		BE79D4EB1B7B1B34008809B7 /* Debug */ = {
+		BE97B35F1B7C1D1F00B3E74D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -293,8 +181,9 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -303,14 +192,13 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -318,7 +206,7 @@
 			};
 			name = Debug;
 		};
-		BE79D4EC1B7B1B34008809B7 /* Release */ = {
+		BE97B3601B7C1D1F00B3E74D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -348,104 +236,59 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		BE79D4EE1B7B1B34008809B7 /* Debug */ = {
+		BE97B3621B7C1D1F00B3E74D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Baby Film/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.gewill.Baby-Film";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
-		BE79D4EF1B7B1B34008809B7 /* Release */ = {
+		BE97B3631B7C1D1F00B3E74D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Baby Film/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.gewill.Baby-Film";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-			};
-			name = Release;
-		};
-		BE79D4F11B7B1B34008809B7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Baby FilmTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Baby Film.app/Baby Film";
-			};
-			name = Debug;
-		};
-		BE79D4F21B7B1B34008809B7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Baby FilmTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Baby Film.app/Baby Film";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BE79D4C91B7B1B34008809B7 /* Build configuration list for PBXProject "Baby Film" */ = {
+		BE97B34A1B7C1D1F00B3E74D /* Build configuration list for PBXProject "Baby Film" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BE79D4EB1B7B1B34008809B7 /* Debug */,
-				BE79D4EC1B7B1B34008809B7 /* Release */,
+				BE97B35F1B7C1D1F00B3E74D /* Debug */,
+				BE97B3601B7C1D1F00B3E74D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BE79D4ED1B7B1B34008809B7 /* Build configuration list for PBXNativeTarget "Baby Film" */ = {
+		BE97B3611B7C1D1F00B3E74D /* Build configuration list for PBXNativeTarget "Baby Film" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BE79D4EE1B7B1B34008809B7 /* Debug */,
-				BE79D4EF1B7B1B34008809B7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BE79D4F01B7B1B34008809B7 /* Build configuration list for PBXNativeTarget "Baby FilmTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BE79D4F11B7B1B34008809B7 /* Debug */,
-				BE79D4F21B7B1B34008809B7 /* Release */,
+				BE97B3621B7C1D1F00B3E74D /* Debug */,
+				BE97B3631B7C1D1F00B3E74D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = BE79D4C61B7B1B34008809B7 /* Project object */;
+	rootObject = BE97B3471B7C1D1F00B3E74D /* Project object */;
 }
