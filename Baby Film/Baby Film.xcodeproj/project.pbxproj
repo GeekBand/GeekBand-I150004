@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE23082C1B7CE89C00024A54 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE23082B1B7CE89C00024A54 /* ImageViewController.swift */; };
+		BE23082E1B7CE8A400024A54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE23082D1B7CE8A400024A54 /* ViewController.swift */; };
+		BE2308301B7CE8AE00024A54 /* DemoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE23082F1B7CE8AE00024A54 /* DemoURL.swift */; };
 		BE6ADFDC1B7C1F8C00574AFA /* GWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6ADFDB1B7C1F8C00574AFA /* GWBaseViewController.swift */; };
 		BE6ADFDE1B7C1F9100574AFA /* GWFilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6ADFDD1B7C1F9100574AFA /* GWFilmViewController.swift */; };
 		BE6ADFE01B7C1F9700574AFA /* GWCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6ADFDF1B7C1F9700574AFA /* GWCameraViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE23082B1B7CE89C00024A54 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		BE23082D1B7CE8A400024A54 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE23082F1B7CE8AE00024A54 /* DemoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoURL.swift; sourceTree = "<group>"; };
 		BE6ADFDB1B7C1F8C00574AFA /* GWBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GWBaseViewController.swift; sourceTree = "<group>"; };
 		BE6ADFDD1B7C1F9100574AFA /* GWFilmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GWFilmViewController.swift; sourceTree = "<group>"; };
 		BE6ADFDF1B7C1F9700574AFA /* GWCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GWCameraViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +45,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE2308311B7CE8B900024A54 /* test 9 Scroll View and Multithreading */ = {
+			isa = PBXGroup;
+			children = (
+				BE23082B1B7CE89C00024A54 /* ImageViewController.swift */,
+				BE23082D1B7CE8A400024A54 /* ViewController.swift */,
+				BE23082F1B7CE8AE00024A54 /* DemoURL.swift */,
+			);
+			name = "test 9 Scroll View and Multithreading";
+			sourceTree = "<group>";
+		};
 		BE6ADFE11B7C207100574AFA /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +89,7 @@
 				BE6ADFDB1B7C1F8C00574AFA /* GWBaseViewController.swift */,
 				BE6ADFDD1B7C1F9100574AFA /* GWFilmViewController.swift */,
 				BE6ADFDF1B7C1F9700574AFA /* GWCameraViewController.swift */,
+				BE2308311B7CE8B900024A54 /* test 9 Scroll View and Multithreading */,
 				BE6ADFE11B7C207100574AFA /* Sources */,
 			);
 			path = "Baby Film";
@@ -149,8 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE23082E1B7CE8A400024A54 /* ViewController.swift in Sources */,
+				BE2308301B7CE8AE00024A54 /* DemoURL.swift in Sources */,
 				BE6ADFDE1B7C1F9100574AFA /* GWFilmViewController.swift in Sources */,
 				BE6ADFE01B7C1F9700574AFA /* GWCameraViewController.swift in Sources */,
+				BE23082C1B7CE89C00024A54 /* ImageViewController.swift in Sources */,
 				BE97B3531B7C1D1F00B3E74D /* AppDelegate.swift in Sources */,
 				BE6ADFDC1B7C1F8C00574AFA /* GWBaseViewController.swift in Sources */,
 			);
