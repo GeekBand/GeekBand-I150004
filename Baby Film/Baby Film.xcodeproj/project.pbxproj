@@ -10,20 +10,39 @@
 		BE23082C1B7CE89C00024A54 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE23082B1B7CE89C00024A54 /* ImageViewController.swift */; };
 		BE23082E1B7CE8A400024A54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE23082D1B7CE8A400024A54 /* ViewController.swift */; };
 		BE2308301B7CE8AE00024A54 /* DemoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE23082F1B7CE8AE00024A54 /* DemoURL.swift */; };
-		BE6ADFDC1B7C1F8C00574AFA /* GWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6ADFDB1B7C1F8C00574AFA /* GWBaseViewController.swift */; };
+		BE23083D1B7D7AAB00024A54 /* bt_next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2308341B7D7AAB00024A54 /* bt_next@2x.png */; };
+		BE23083E1B7D7AAB00024A54 /* bt_previous@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2308351B7D7AAB00024A54 /* bt_previous@2x.png */; };
+		BE23083F1B7D7AAB00024A54 /* SZCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2308371B7D7AAB00024A54 /* SZCalendarCell.m */; };
+		BE2308401B7D7AAB00024A54 /* SZCalendarPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2308391B7D7AAB00024A54 /* SZCalendarPicker.m */; };
+		BE2308411B7D7AAB00024A54 /* SZCalendarPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE23083A1B7D7AAB00024A54 /* SZCalendarPicker.xib */; };
+		BE2308421B7D7AAB00024A54 /* UIColor+ZXLazy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE23083C1B7D7AAB00024A54 /* UIColor+ZXLazy.m */; };
 		BE6ADFDE1B7C1F9100574AFA /* GWFilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6ADFDD1B7C1F9100574AFA /* GWFilmViewController.swift */; };
 		BE6ADFE01B7C1F9700574AFA /* GWCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6ADFDF1B7C1F9700574AFA /* GWCameraViewController.swift */; };
 		BE97B3531B7C1D1F00B3E74D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE97B3521B7C1D1F00B3E74D /* AppDelegate.swift */; };
 		BE97B35A1B7C1D1F00B3E74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE97B3591B7C1D1F00B3E74D /* Assets.xcassets */; };
 		BE97B3651B7C1D5200B3E74D /* TestVideo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = BE97B3641B7C1D5200B3E74D /* TestVideo.m4v */; };
 		BEDF80C61B7C6C40006571A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEDF80C81B7C6C40006571A8 /* Main.storyboard */; };
+		BEECF0761B7D92F900A97CC6 /* SZCalendarCell.h in Sources */ = {isa = PBXBuildFile; fileRef = BE2308361B7D7AAB00024A54 /* SZCalendarCell.h */; };
+		BEECF0771B7D92F900A97CC6 /* SZCalendarPicker.h in Sources */ = {isa = PBXBuildFile; fileRef = BE2308381B7D7AAB00024A54 /* SZCalendarPicker.h */; };
+		BEECF0781B7D92F900A97CC6 /* SZCalendarPicker.xib in Sources */ = {isa = PBXBuildFile; fileRef = BE23083A1B7D7AAB00024A54 /* SZCalendarPicker.xib */; };
+		BEECF0791B7D92F900A97CC6 /* UIColor+ZXLazy.h in Sources */ = {isa = PBXBuildFile; fileRef = BE23083B1B7D7AAB00024A54 /* UIColor+ZXLazy.h */; };
+		BEECF0EF1B7D9A6800A97CC6 /* GWHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEECF0EE1B7D9A6800A97CC6 /* GWHomeView.m */; };
+		BEECF0F21B7D9AF900A97CC6 /* GWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEECF0F11B7D9AF900A97CC6 /* GWHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BE23082B1B7CE89C00024A54 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		BE23082D1B7CE8A400024A54 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE23082F1B7CE8AE00024A54 /* DemoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoURL.swift; sourceTree = "<group>"; };
-		BE6ADFDB1B7C1F8C00574AFA /* GWBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GWBaseViewController.swift; sourceTree = "<group>"; };
+		BE2308341B7D7AAB00024A54 /* bt_next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_next@2x.png"; sourceTree = "<group>"; };
+		BE2308351B7D7AAB00024A54 /* bt_previous@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_previous@2x.png"; sourceTree = "<group>"; };
+		BE2308361B7D7AAB00024A54 /* SZCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZCalendarCell.h; sourceTree = "<group>"; };
+		BE2308371B7D7AAB00024A54 /* SZCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZCalendarCell.m; sourceTree = "<group>"; };
+		BE2308381B7D7AAB00024A54 /* SZCalendarPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZCalendarPicker.h; sourceTree = "<group>"; };
+		BE2308391B7D7AAB00024A54 /* SZCalendarPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZCalendarPicker.m; sourceTree = "<group>"; };
+		BE23083A1B7D7AAB00024A54 /* SZCalendarPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SZCalendarPicker.xib; sourceTree = "<group>"; };
+		BE23083B1B7D7AAB00024A54 /* UIColor+ZXLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZXLazy.h"; sourceTree = "<group>"; };
+		BE23083C1B7D7AAB00024A54 /* UIColor+ZXLazy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZXLazy.m"; sourceTree = "<group>"; };
 		BE6ADFDD1B7C1F9100574AFA /* GWFilmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GWFilmViewController.swift; sourceTree = "<group>"; };
 		BE6ADFDF1B7C1F9700574AFA /* GWCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GWCameraViewController.swift; sourceTree = "<group>"; };
 		BE97B34F1B7C1D1F00B3E74D /* Baby Film.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Baby Film.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +51,10 @@
 		BE97B35E1B7C1D1F00B3E74D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE97B3641B7C1D5200B3E74D /* TestVideo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestVideo.m4v; sourceTree = "<group>"; };
 		BEDF80C71B7C6C40006571A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEECF0ED1B7D9A6800A97CC6 /* GWHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWHomeView.h; sourceTree = "<group>"; };
+		BEECF0EE1B7D9A6800A97CC6 /* GWHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWHomeView.m; sourceTree = "<group>"; };
+		BEECF0F01B7D9AF900A97CC6 /* GWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWHomeViewController.h; sourceTree = "<group>"; };
+		BEECF0F11B7D9AF900A97CC6 /* GWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWHomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +76,31 @@
 				BE23082F1B7CE8AE00024A54 /* DemoURL.swift */,
 			);
 			name = "test 9 Scroll View and Multithreading";
+			sourceTree = "<group>";
+		};
+		BE2308321B7D7AAB00024A54 /* SZCalendarPicker Class */ = {
+			isa = PBXGroup;
+			children = (
+				BE2308331B7D7AAB00024A54 /* Resource */,
+				BE2308361B7D7AAB00024A54 /* SZCalendarCell.h */,
+				BE2308371B7D7AAB00024A54 /* SZCalendarCell.m */,
+				BE2308381B7D7AAB00024A54 /* SZCalendarPicker.h */,
+				BE2308391B7D7AAB00024A54 /* SZCalendarPicker.m */,
+				BE23083A1B7D7AAB00024A54 /* SZCalendarPicker.xib */,
+				BE23083B1B7D7AAB00024A54 /* UIColor+ZXLazy.h */,
+				BE23083C1B7D7AAB00024A54 /* UIColor+ZXLazy.m */,
+			);
+			name = "SZCalendarPicker Class";
+			path = Class;
+			sourceTree = "<group>";
+		};
+		BE2308331B7D7AAB00024A54 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BE2308341B7D7AAB00024A54 /* bt_next@2x.png */,
+				BE2308351B7D7AAB00024A54 /* bt_previous@2x.png */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		BE6ADFE11B7C207100574AFA /* Sources */ = {
@@ -86,9 +134,13 @@
 			children = (
 				BE97B3521B7C1D1F00B3E74D /* AppDelegate.swift */,
 				BEDF80C81B7C6C40006571A8 /* Main.storyboard */,
-				BE6ADFDB1B7C1F8C00574AFA /* GWBaseViewController.swift */,
+				BEECF0F01B7D9AF900A97CC6 /* GWHomeViewController.h */,
+				BEECF0F11B7D9AF900A97CC6 /* GWHomeViewController.m */,
+				BEECF0ED1B7D9A6800A97CC6 /* GWHomeView.h */,
+				BEECF0EE1B7D9A6800A97CC6 /* GWHomeView.m */,
 				BE6ADFDD1B7C1F9100574AFA /* GWFilmViewController.swift */,
 				BE6ADFDF1B7C1F9700574AFA /* GWCameraViewController.swift */,
+				BE2308321B7D7AAB00024A54 /* SZCalendarPicker Class */,
 				BE2308311B7CE8B900024A54 /* test 9 Scroll View and Multithreading */,
 				BE6ADFE11B7C207100574AFA /* Sources */,
 			);
@@ -153,9 +205,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE23083E1B7D7AAB00024A54 /* bt_previous@2x.png in Resources */,
 				BEDF80C61B7C6C40006571A8 /* Main.storyboard in Resources */,
 				BE97B3651B7C1D5200B3E74D /* TestVideo.m4v in Resources */,
 				BE97B35A1B7C1D1F00B3E74D /* Assets.xcassets in Resources */,
+				BE2308411B7D7AAB00024A54 /* SZCalendarPicker.xib in Resources */,
+				BE23083D1B7D7AAB00024A54 /* bt_next@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,13 +221,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEECF0761B7D92F900A97CC6 /* SZCalendarCell.h in Sources */,
+				BEECF0771B7D92F900A97CC6 /* SZCalendarPicker.h in Sources */,
+				BEECF0781B7D92F900A97CC6 /* SZCalendarPicker.xib in Sources */,
+				BEECF0791B7D92F900A97CC6 /* UIColor+ZXLazy.h in Sources */,
 				BE23082E1B7CE8A400024A54 /* ViewController.swift in Sources */,
+				BEECF0EF1B7D9A6800A97CC6 /* GWHomeView.m in Sources */,
+				BEECF0F21B7D9AF900A97CC6 /* GWHomeViewController.m in Sources */,
 				BE2308301B7CE8AE00024A54 /* DemoURL.swift in Sources */,
+				BE23083F1B7D7AAB00024A54 /* SZCalendarCell.m in Sources */,
 				BE6ADFDE1B7C1F9100574AFA /* GWFilmViewController.swift in Sources */,
 				BE6ADFE01B7C1F9700574AFA /* GWCameraViewController.swift in Sources */,
+				BE2308421B7D7AAB00024A54 /* UIColor+ZXLazy.m in Sources */,
+				BE2308401B7D7AAB00024A54 /* SZCalendarPicker.m in Sources */,
 				BE23082C1B7CE89C00024A54 /* ImageViewController.swift in Sources */,
 				BE97B3531B7C1D1F00B3E74D /* AppDelegate.swift in Sources */,
-				BE6ADFDC1B7C1F8C00574AFA /* GWBaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

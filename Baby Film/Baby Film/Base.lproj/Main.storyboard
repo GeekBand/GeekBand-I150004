@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JcP-sk-Rik">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JcP-sk-Rik">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -8,14 +8,25 @@
         <!--Baby Film-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="GWHomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="GWHomeView" customModule="Baby_Film" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qH2-bB-33j">
+                                <rect key="frame" x="16" y="72" width="32" height="30"/>
+                                <state key="normal" title="Date">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showCalendar:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Sdg-8u-MJ9"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <toolbarItems>
@@ -38,7 +49,6 @@
                         </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Baby Film" id="3tb-Zm-MdJ">
-                        <barButtonItem key="leftBarButtonItem" title="Date" id="CFo-lN-A9c"/>
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="RW5-PL-eab">
                             <connections>
                                 <segue destination="TQZ-hF-ykN" kind="show" id="aKq-BN-NvZ"/>
@@ -48,12 +58,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="182" y="-1766"/>
+            <point key="canvasLocation" x="171" y="-1766"/>
         </scene>
-        <!--Base View Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="bpD-1n-H9l">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="JcP-sk-Rik" customClass="GWBaseViewController" customModule="Baby_Film" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="JcP-sk-Rik" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="o4i-15-RKt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -291,8 +301,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmC-Wy-hv0">
-                                <rect key="frame" x="488" y="562" width="96" height="30"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmC-Wy-hv0">
+                                <rect key="frame" x="488" y="518" width="96" height="30"/>
                                 <state key="normal" title="Saved Photos">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -300,12 +310,15 @@
                                     <action selector="loadFromLibrary:" destination="hiL-na-6qU" eventType="touchUpInside" id="rng-sF-RAb"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rml-Rx-9SY">
-                                <rect key="frame" x="16" y="72" width="568" height="482"/>
-                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Deg-TT-Zct">
+                                <rect key="frame" x="16" y="72" width="568" height="438"/>
+                                <connections>
+                                    <segue destination="h82-B4-p14" kind="embed" identifier="toAVPlayerSegue" id="rPu-Et-Zl0"/>
+                                </connections>
+                            </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJu-R4-RMa">
-                                <rect key="frame" x="16" y="562" width="77" height="30"/>
-                                <state key="normal" title="Take Photo">
+                                <rect key="frame" x="263" y="518" width="75" height="30"/>
+                                <state key="normal" title="Take Video">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -315,28 +328,28 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Rml-Rx-9SY" firstAttribute="trailing" secondItem="a9v-Gk-YLh" secondAttribute="trailingMargin" id="AcS-pM-nV5"/>
+                            <constraint firstItem="qmC-Wy-hv0" firstAttribute="top" secondItem="Deg-TT-Zct" secondAttribute="bottom" constant="8" symbolic="YES" id="3JL-l4-AO4"/>
+                            <constraint firstItem="lMt-vv-dDM" firstAttribute="top" secondItem="Deg-TT-Zct" secondAttribute="bottom" constant="8" symbolic="YES" id="8Xa-2F-y7e"/>
                             <constraint firstItem="lMt-vv-dDM" firstAttribute="top" secondItem="uJu-R4-RMa" secondAttribute="bottom" constant="8" id="CFl-ca-dda"/>
-                            <constraint firstItem="qmC-Wy-hv0" firstAttribute="top" secondItem="Rml-Rx-9SY" secondAttribute="bottom" constant="8" id="KR6-p2-Nt4"/>
-                            <constraint firstItem="Rml-Rx-9SY" firstAttribute="leading" secondItem="a9v-Gk-YLh" secondAttribute="leadingMargin" id="aBe-Ey-YYI"/>
+                            <constraint firstItem="Deg-TT-Zct" firstAttribute="leading" secondItem="a9v-Gk-YLh" secondAttribute="leadingMargin" id="NVL-ks-AYO"/>
+                            <constraint firstItem="qmC-Wy-hv0" firstAttribute="leading" secondItem="Deg-TT-Zct" secondAttribute="trailing" constant="-96" id="XKx-3N-qVY"/>
+                            <constraint firstItem="Deg-TT-Zct" firstAttribute="top" secondItem="oBn-JL-AoI" secondAttribute="bottom" constant="8" symbolic="YES" id="Ydo-Wg-8S0"/>
                             <constraint firstItem="uJu-R4-RMa" firstAttribute="leading" secondItem="a9v-Gk-YLh" secondAttribute="leadingMargin" id="caC-cy-RE2"/>
                             <constraint firstItem="qmC-Wy-hv0" firstAttribute="trailing" secondItem="a9v-Gk-YLh" secondAttribute="trailingMargin" id="iDm-UL-q8v"/>
                             <constraint firstItem="uJu-R4-RMa" firstAttribute="baseline" secondItem="qmC-Wy-hv0" secondAttribute="baseline" id="j7i-Xg-VgU"/>
-                            <constraint firstItem="uJu-R4-RMa" firstAttribute="top" secondItem="Rml-Rx-9SY" secondAttribute="bottom" constant="8" id="lrv-cc-H1s"/>
-                            <constraint firstItem="Rml-Rx-9SY" firstAttribute="top" secondItem="oBn-JL-AoI" secondAttribute="bottom" constant="8" id="m1N-P3-sDx"/>
                             <constraint firstItem="lMt-vv-dDM" firstAttribute="top" secondItem="qmC-Wy-hv0" secondAttribute="bottom" constant="8" id="mIb-Ul-OSI"/>
-                            <constraint firstItem="Rml-Rx-9SY" firstAttribute="top" secondItem="oBn-JL-AoI" secondAttribute="bottom" constant="52" id="o0g-uM-32c"/>
+                            <constraint firstItem="Deg-TT-Zct" firstAttribute="trailing" secondItem="a9v-Gk-YLh" secondAttribute="trailingMargin" id="oNZ-X2-Ph0"/>
+                            <constraint firstAttribute="centerX" secondItem="uJu-R4-RMa" secondAttribute="centerX" id="xpa-WR-Ecz"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="o0g-uM-32c"/>
+                                <exclude reference="caC-cy-RE2"/>
+                                <exclude reference="8Xa-2F-y7e"/>
+                                <exclude reference="XKx-3N-qVY"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="uhx-pf-g5e"/>
-                    <connections>
-                        <outlet property="imageView" destination="Rml-Rx-9SY" id="yvg-Gf-4oX"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1J8-dw-eWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -363,7 +376,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCd-Qt-FZV">
                                 <rect key="frame" x="274" y="72" width="33" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40r-bU-5Nm">
@@ -563,9 +576,17 @@
             </objects>
             <point key="canvasLocation" x="-1444" y="-997"/>
         </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="dv5-YJ-ob0">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="h82-B4-p14" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CmP-VV-O7e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-632" y="-360.5"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="afr-hs-anZ"/>
+        <segue reference="fmO-Il-82T"/>
         <segue reference="8tm-nk-mM3"/>
     </inferredMetricsTieBreakers>
 </document>

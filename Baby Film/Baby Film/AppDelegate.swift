@@ -15,7 +15,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // get preferenes
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let myDefaults = ["greeting": "hello", "nubmerOFItems": "1"]
+        defaults.registerDefaults(myDefaults)
+        
+        // accessing preferences
+        let greeting = defaults.objectForKey("greeting") as? String
+        println(greeting)
+        
+        // setting preferences
+        let newGreeting = "hi, there"
+        defaults.setObject(newGreeting, forKey: "greeting")
+        
+        
         return true
     }
 
