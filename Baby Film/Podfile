@@ -1,0 +1,1 @@
+pod 'FDFullscreenPopGesture', '~> 1.1'

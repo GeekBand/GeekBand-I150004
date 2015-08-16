@@ -18,16 +18,39 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qH2-bB-33j">
-                                <rect key="frame" x="16" y="72" width="32" height="30"/>
-                                <state key="normal" title="Date">
+                                <rect key="frame" x="16" y="72" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.31008506893330573" green="0.33988429042416535" blue="0.56565656565656564" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="show calendar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="showCalendar:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Sdg-8u-MJ9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQC-6b-ho4">
+                                <rect key="frame" x="171" y="285" width="257" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.35170111163676332" blue="0.4463381500113871" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.96813927324461468" blue="0.96037093322652711" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Test merge videos with AVFoundation">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Hef-ob-ySF" kind="show" id="LJH-sE-jsw"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="zQC-6b-ho4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="14T-Gx-xbH"/>
+                            <constraint firstAttribute="centerY" secondItem="zQC-6b-ho4" secondAttribute="centerY" id="J7h-CD-OXi"/>
+                            <constraint firstAttribute="centerX" secondItem="zQC-6b-ho4" secondAttribute="centerX" id="aYW-mK-JYX"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="14T-Gx-xbH"/>
+                            </mask>
+                        </variation>
                     </view>
                     <toolbarItems>
                         <barButtonItem tag="1" title="Camera" id="fmX-ks-xns">
@@ -146,9 +169,6 @@
                                 <state key="normal" title="Make it">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="bgS-AN-tDN" kind="show" identifier="toMakeFilmSegue" id="fmO-Il-82T"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -167,7 +187,7 @@
         <!--Setting View Controller-->
         <scene sceneID="8VF-qW-Xy2">
             <objects>
-                <viewController id="TQZ-hF-ykN" customClass="GWSettingViewController" customModule="Baby_Film" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TQZ-hF-ykN" customClass="GWSettingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hgt-PL-fNR"/>
                         <viewControllerLayoutGuide type="bottom" id="8bh-yW-pih"/>
@@ -177,31 +197,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Setting" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0P-5v-8FA">
-                                <rect key="frame" x="0.0" y="0.0" width="55" height="21"/>
+                                <rect key="frame" x="0.0" y="0.0" width="54.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6b3-2f-5eB">
-                                <rect key="frame" x="249" y="176" width="83" height="67"/>
+                                <rect key="frame" x="249" y="176" width="83" height="67.5"/>
                                 <state key="normal" title="Rate or Star">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="GeekBand-I150004" translatesAutoresizingMaskIntoConstraints="NO" id="EoO-Yp-GY0">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoO-Yp-GY0">
                                 <rect key="frame" x="16" y="280" width="568" height="230"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">GeekBand·极客班是由温故知新（上海）教育科技有限公司投资成立的高端IT在线教育平台。通过整合全球顶尖IT技术专家，不断打造创新的教育产品和极致的教学体验，我们致力于为广大用户提供最优秀的IT技术教育服务。
+
+"所谓大学者,非谓有大楼之谓也,有大师之谓也"，我们笃信优秀的教育服务必须有优质的师资力量作基础。GeekBand汇聚了对IT技术教育传播抱持远大理想的顶尖技术专家及各领域优秀人才。
+
+我们是互联网教育的精神信徒和践行者。我们相信移动互联网与云计算技术的结合将颠覆性地革新知识的表达、传输、与分享方式，以全新的用户体验，缩短知识传播者与受众之间的距离，从而加速知识传播的速度，提升知识传播的质量。无论是教学产品、教育模式、还是教学理念，我们一直在持续不断地推进创新，打造极致的教育产品和教学体验。
+
+
+电话：400-886-0806
+邮件：service@geekband.com
+网址：www.geekband.com
+地址：上海市浦东新区郭守敬路498号 19楼-405A室 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About us" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iab-GA-YEk">
-                                <rect key="frame" x="256" y="251" width="69" height="20.5"/>
+                                <rect key="frame" x="256" y="251.5" width="69" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bdL-PK-sg1">
-                                <rect key="frame" x="368" y="142" width="51" height="31"/>
+                                <rect key="frame" x="367" y="142" width="51" height="31"/>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yk4-4g-YW8">
                                 <rect key="frame" x="165" y="518" width="251" height="30"/>
@@ -213,7 +244,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store in iCloud" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLq-Ob-GZk">
-                                <rect key="frame" x="240.5" y="147" width="119" height="21"/>
+                                <rect key="frame" x="240" y="147" width="119" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="119" id="VID-rX-RwI"/>
                                     <constraint firstAttribute="height" constant="21" id="qXO-jZ-ChU"/>
@@ -584,9 +615,228 @@
             </objects>
             <point key="canvasLocation" x="-632" y="-360.5"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="HLf-Ok-Rrb">
+            <objects>
+                <viewController id="Kal-v5-43i" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vzn-VC-ZVS"/>
+                        <viewControllerLayoutGuide type="bottom" id="q8B-z3-kCP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Fz-7k-Kse">
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmo-So-cA5">
+                                <rect key="frame" x="70" y="100" width="180" height="37"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Select and Play Video">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qNw-c9-d9Y" kind="push" id="zqS-zT-jRL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajO-Qu-MLe">
+                                <rect key="frame" x="65" y="160" width="191" height="37"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Record and Save Video">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xKt-Bn-aha" kind="push" id="XfI-xe-IvK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqy-nd-u6B">
+                                <rect key="frame" x="65" y="225" width="191" height="37"/>
+                                <color key="backgroundColor" red="1" green="0.3517011116" blue="0.44633814999999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Merge Multiple Videos">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9qS-mI-qi5" kind="push" id="zL1-fi-6bp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LBm-mW-ZFl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="twQ-6w-c1f" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2454" y="-1002"/>
+        </scene>
+        <!--Merge Video-->
+        <scene sceneID="P1C-GT-UVj">
+            <objects>
+                <viewController id="9qS-mI-qi5" customClass="MergeVideo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FBq-bD-lnw"/>
+                        <viewControllerLayoutGuide type="bottom" id="Scu-w9-BKY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j1n-XV-T70">
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HmY-p4-2oz">
+                                <rect key="frame" x="101" y="148" width="398" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Load Video 1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="LoadAssetOne:" destination="9qS-mI-qi5" eventType="touchUpInside" id="kho-1z-bRO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lT-pK-HKF">
+                                <rect key="frame" x="101" y="186" width="398" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="Bdj-Ak-j59"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Load Video 2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="LoadAssetTwo:" destination="9qS-mI-qi5" eventType="touchUpInside" id="eEh-hG-O3u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmK-eD-V1d">
+                                <rect key="frame" x="101" y="231" width="398" height="37"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Load Music">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="LoadAudio:" destination="9qS-mI-qi5" eventType="touchUpInside" id="36b-Aw-eAb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbg-8v-jha">
+                                <rect key="frame" x="68" y="312" width="464" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="d1M-40-SsH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Merge and Save Video">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="MergeAndSave:" destination="9qS-mI-qi5" eventType="touchUpInside" id="OwA-Gj-7RD"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="oW4-Ru-oy5">
+                                <rect key="frame" x="289.5" y="368" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7lT-pK-HKF" firstAttribute="leading" secondItem="wmK-eD-V1d" secondAttribute="leading" id="4vo-As-Nf1"/>
+                            <constraint firstItem="Pbg-8v-jha" firstAttribute="top" secondItem="wmK-eD-V1d" secondAttribute="bottom" constant="44" id="ANY-5P-7Id"/>
+                            <constraint firstItem="7lT-pK-HKF" firstAttribute="leading" secondItem="HmY-p4-2oz" secondAttribute="leading" id="DTW-GO-bmz"/>
+                            <constraint firstAttribute="centerX" secondItem="HmY-p4-2oz" secondAttribute="centerX" id="Dy6-Ly-611"/>
+                            <constraint firstAttribute="bottom" secondItem="Pbg-8v-jha" secondAttribute="bottom" constant="251" id="FPE-Fq-iU2"/>
+                            <constraint firstItem="7lT-pK-HKF" firstAttribute="top" secondItem="HmY-p4-2oz" secondAttribute="bottom" constant="8" symbolic="YES" id="GML-WB-IGR"/>
+                            <constraint firstItem="wmK-eD-V1d" firstAttribute="top" secondItem="7lT-pK-HKF" secondAttribute="bottom" constant="8" symbolic="YES" id="H2S-Gw-Ber"/>
+                            <constraint firstItem="7lT-pK-HKF" firstAttribute="leading" secondItem="j1n-XV-T70" secondAttribute="leadingMargin" constant="85" id="N4h-9C-KPs"/>
+                            <constraint firstItem="Pbg-8v-jha" firstAttribute="leading" secondItem="j1n-XV-T70" secondAttribute="leadingMargin" constant="52" id="OLk-Ns-blU"/>
+                            <constraint firstAttribute="centerX" secondItem="wmK-eD-V1d" secondAttribute="centerX" id="X5D-yR-dix"/>
+                            <constraint firstAttribute="centerY" secondItem="wmK-eD-V1d" secondAttribute="centerY" constant="50.5" id="f9O-Tr-QVZ"/>
+                            <constraint firstAttribute="centerX" secondItem="Pbg-8v-jha" secondAttribute="centerX" id="kRI-n0-Gz1"/>
+                            <constraint firstItem="Pbg-8v-jha" firstAttribute="centerX" secondItem="oW4-Ru-oy5" secondAttribute="centerX" id="rVl-hZ-4O6"/>
+                            <constraint firstAttribute="centerX" secondItem="7lT-pK-HKF" secondAttribute="centerX" id="rcK-Yo-ZuE"/>
+                            <constraint firstItem="oW4-Ru-oy5" firstAttribute="top" secondItem="Pbg-8v-jha" secondAttribute="bottom" constant="19" id="uFN-GK-czu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="out-Cu-Wg7"/>
+                    <connections>
+                        <outlet property="ActivityView" destination="oW4-Ru-oy5" id="7Bz-kM-Cvh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6qD-VF-KwV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3158" y="-295"/>
+        </scene>
+        <!--Play Video-->
+        <scene sceneID="UyA-MW-plj">
+            <objects>
+                <viewController id="qNw-c9-d9Y" customClass="PlayVideo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ljo-jm-KyV"/>
+                        <viewControllerLayoutGuide type="bottom" id="VUh-jf-5U6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kdV-Uh-g6g">
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPt-db-fVK">
+                                <rect key="frame" x="110" y="243" width="100" height="37"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Play Video">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="PlayVideo:" destination="qNw-c9-d9Y" eventType="touchUpInside" id="Qhp-de-k8U"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xsM-cc-2na"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I56-9l-SER" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3158" y="-1682"/>
+        </scene>
+        <!--Record Video-->
+        <scene sceneID="gTi-DL-MhC">
+            <objects>
+                <viewController id="xKt-Bn-aha" customClass="RecordVideo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VCN-x5-30Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Vx-Rq-Nbp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yah-el-V5H">
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWs-xh-U7t">
+                                <rect key="frame" x="100" y="238" width="121" height="37"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Record Video">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="RecordAndPlay:" destination="xKt-Bn-aha" eventType="touchUpInside" id="UjS-PR-06R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5Rq-0c-SDk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="53V-tT-r6x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3158" y="-1002"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Czf-Kg-jrt">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="Hef-ob-ySF" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="0LT-ZZ-39V">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Kal-v5-43i" kind="relationship" relationship="rootViewController" id="B7N-1Z-xhr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="snF-ec-QqL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1751" y="-1766"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fmO-Il-82T"/>
         <segue reference="8tm-nk-mM3"/>
     </inferredMetricsTieBreakers>
 </document>

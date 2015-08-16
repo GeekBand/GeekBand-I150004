@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CFD9F110D497C7770BD212F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B6D41DF0C4BE12001784E9E /* libPods.a */; };
 		BE23082C1B7CE89C00024A54 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE23082B1B7CE89C00024A54 /* ImageViewController.swift */; };
 		BE23082E1B7CE8A400024A54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE23082D1B7CE8A400024A54 /* ViewController.swift */; };
 		BE2308301B7CE8AE00024A54 /* DemoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE23082F1B7CE8AE00024A54 /* DemoURL.swift */; };
@@ -21,6 +22,11 @@
 		BE97B3531B7C1D1F00B3E74D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE97B3521B7C1D1F00B3E74D /* AppDelegate.swift */; };
 		BE97B35A1B7C1D1F00B3E74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE97B3591B7C1D1F00B3E74D /* Assets.xcassets */; };
 		BE97B3651B7C1D5200B3E74D /* TestVideo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = BE97B3641B7C1D5200B3E74D /* TestVideo.m4v */; };
+		BEB922701B7F826400521F4D /* RecordVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB922691B7F826400521F4D /* RecordVideo.m */; };
+		BEB922711B7F826400521F4D /* MergeVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB9226B1B7F826400521F4D /* MergeVideo.m */; };
+		BEB922721B7F826400521F4D /* PlayVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB9226D1B7F826400521F4D /* PlayVideo.m */; };
+		BEB922731B7F826400521F4D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB9226F1B7F826400521F4D /* ViewController.m */; };
+		BECF2F851B7E4D9000C898EA /* GWSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BECF2F841B7E4D9000C898EA /* GWSettingViewController.m */; };
 		BEDF80C61B7C6C40006571A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEDF80C81B7C6C40006571A8 /* Main.storyboard */; };
 		BEECF0761B7D92F900A97CC6 /* SZCalendarCell.h in Sources */ = {isa = PBXBuildFile; fileRef = BE2308361B7D7AAB00024A54 /* SZCalendarCell.h */; };
 		BEECF0771B7D92F900A97CC6 /* SZCalendarPicker.h in Sources */ = {isa = PBXBuildFile; fileRef = BE2308381B7D7AAB00024A54 /* SZCalendarPicker.h */; };
@@ -31,6 +37,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B6D41DF0C4BE12001784E9E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		447E0D71A5CEB7DA2E8D2B25 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		48377ACD1DB431552EC653B0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BE23082B1B7CE89C00024A54 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		BE23082D1B7CE8A400024A54 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE23082F1B7CE8AE00024A54 /* DemoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoURL.swift; sourceTree = "<group>"; };
@@ -50,6 +59,16 @@
 		BE97B3591B7C1D1F00B3E74D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE97B35E1B7C1D1F00B3E74D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE97B3641B7C1D5200B3E74D /* TestVideo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestVideo.m4v; sourceTree = "<group>"; };
+		BEB922681B7F826400521F4D /* RecordVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordVideo.h; sourceTree = "<group>"; };
+		BEB922691B7F826400521F4D /* RecordVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordVideo.m; sourceTree = "<group>"; };
+		BEB9226A1B7F826400521F4D /* MergeVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergeVideo.h; sourceTree = "<group>"; };
+		BEB9226B1B7F826400521F4D /* MergeVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MergeVideo.m; sourceTree = "<group>"; };
+		BEB9226C1B7F826400521F4D /* PlayVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayVideo.h; sourceTree = "<group>"; };
+		BEB9226D1B7F826400521F4D /* PlayVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayVideo.m; sourceTree = "<group>"; };
+		BEB9226E1B7F826400521F4D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BEB9226F1B7F826400521F4D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BECF2F831B7E4D9000C898EA /* GWSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWSettingViewController.h; sourceTree = "<group>"; };
+		BECF2F841B7E4D9000C898EA /* GWSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWSettingViewController.m; sourceTree = "<group>"; };
 		BEDF80C71B7C6C40006571A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BEECF0ED1B7D9A6800A97CC6 /* GWHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWHomeView.h; sourceTree = "<group>"; };
 		BEECF0EE1B7D9A6800A97CC6 /* GWHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWHomeView.m; sourceTree = "<group>"; };
@@ -62,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CFD9F110D497C7770BD212F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +138,8 @@
 			children = (
 				BE97B3511B7C1D1F00B3E74D /* Baby Film */,
 				BE97B3501B7C1D1F00B3E74D /* Products */,
+				CC2A2A78A8063387AD5E36CB /* Pods */,
+				E37AE42EDB99FE171D289884 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				BE97B3521B7C1D1F00B3E74D /* AppDelegate.swift */,
+				BECF2F831B7E4D9000C898EA /* GWSettingViewController.h */,
+				BECF2F841B7E4D9000C898EA /* GWSettingViewController.m */,
 				BEDF80C81B7C6C40006571A8 /* Main.storyboard */,
 				BEECF0F01B7D9AF900A97CC6 /* GWHomeViewController.h */,
 				BEECF0F11B7D9AF900A97CC6 /* GWHomeViewController.m */,
@@ -140,11 +164,44 @@
 				BEECF0EE1B7D9A6800A97CC6 /* GWHomeView.m */,
 				BE6ADFDD1B7C1F9100574AFA /* GWFilmViewController.swift */,
 				BE6ADFDF1B7C1F9700574AFA /* GWCameraViewController.swift */,
+				BEB922671B7F824500521F4D /* VideoPlayRecord */,
 				BE2308321B7D7AAB00024A54 /* SZCalendarPicker Class */,
 				BE2308311B7CE8B900024A54 /* test 9 Scroll View and Multithreading */,
 				BE6ADFE11B7C207100574AFA /* Sources */,
 			);
 			path = "Baby Film";
+			sourceTree = "<group>";
+		};
+		BEB922671B7F824500521F4D /* VideoPlayRecord */ = {
+			isa = PBXGroup;
+			children = (
+				BEB922681B7F826400521F4D /* RecordVideo.h */,
+				BEB922691B7F826400521F4D /* RecordVideo.m */,
+				BEB9226A1B7F826400521F4D /* MergeVideo.h */,
+				BEB9226B1B7F826400521F4D /* MergeVideo.m */,
+				BEB9226C1B7F826400521F4D /* PlayVideo.h */,
+				BEB9226D1B7F826400521F4D /* PlayVideo.m */,
+				BEB9226E1B7F826400521F4D /* ViewController.h */,
+				BEB9226F1B7F826400521F4D /* ViewController.m */,
+			);
+			name = VideoPlayRecord;
+			sourceTree = "<group>";
+		};
+		CC2A2A78A8063387AD5E36CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48377ACD1DB431552EC653B0 /* Pods.debug.xcconfig */,
+				447E0D71A5CEB7DA2E8D2B25 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E37AE42EDB99FE171D289884 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B6D41DF0C4BE12001784E9E /* libPods.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE97B3611B7C1D1F00B3E74D /* Build configuration list for PBXNativeTarget "Baby Film" */;
 			buildPhases = (
+				A597EBD2E104C91BDD4AB79F /* Check Pods Manifest.lock */,
 				BE97B34B1B7C1D1F00B3E74D /* Sources */,
 				BE97B34C1B7C1D1F00B3E74D /* Frameworks */,
 				BE97B34D1B7C1D1F00B3E74D /* Resources */,
+				77A78AD283B51FD2CB1327AE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,6 +232,7 @@
 		BE97B3471B7C1D1F00B3E74D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WILL;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = gewill.org;
 				TargetAttributes = {
@@ -216,11 +276,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		77A78AD283B51FD2CB1327AE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A597EBD2E104C91BDD4AB79F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BE97B34B1B7C1D1F00B3E74D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB922711B7F826400521F4D /* MergeVideo.m in Sources */,
 				BEECF0761B7D92F900A97CC6 /* SZCalendarCell.h in Sources */,
 				BEECF0771B7D92F900A97CC6 /* SZCalendarPicker.h in Sources */,
 				BEECF0781B7D92F900A97CC6 /* SZCalendarPicker.xib in Sources */,
@@ -231,11 +325,15 @@
 				BE2308301B7CE8AE00024A54 /* DemoURL.swift in Sources */,
 				BE23083F1B7D7AAB00024A54 /* SZCalendarCell.m in Sources */,
 				BE6ADFDE1B7C1F9100574AFA /* GWFilmViewController.swift in Sources */,
+				BEB922721B7F826400521F4D /* PlayVideo.m in Sources */,
 				BE6ADFE01B7C1F9700574AFA /* GWCameraViewController.swift in Sources */,
+				BEB922701B7F826400521F4D /* RecordVideo.m in Sources */,
+				BEB922731B7F826400521F4D /* ViewController.m in Sources */,
 				BE2308421B7D7AAB00024A54 /* UIColor+ZXLazy.m in Sources */,
 				BE2308401B7D7AAB00024A54 /* SZCalendarPicker.m in Sources */,
 				BE23082C1B7CE89C00024A54 /* ImageViewController.swift in Sources */,
 				BE97B3531B7C1D1F00B3E74D /* AppDelegate.swift in Sources */,
+				BECF2F851B7E4D9000C898EA /* GWSettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +434,7 @@
 		};
 		BE97B3621B7C1D1F00B3E74D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48377ACD1DB431552EC653B0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -351,6 +450,7 @@
 		};
 		BE97B3631B7C1D1F00B3E74D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 447E0D71A5CEB7DA2E8D2B25 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

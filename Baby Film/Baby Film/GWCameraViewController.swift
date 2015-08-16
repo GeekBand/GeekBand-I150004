@@ -19,7 +19,7 @@ class GWCameraViewController: UIViewController, UIImagePickerControllerDelegate,
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        presentViewController(AVPlayerViewController(), animated: true, completion: nil)
+        
         
     }
     
